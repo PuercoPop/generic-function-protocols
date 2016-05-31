@@ -1,6 +1,7 @@
 (in-package #:asdf-user)
 
 (defsystem #:generic-function-protocols
+  :license "♡"
   :serial t
   :depends-on (#:alexandria
                #:closer-mop
