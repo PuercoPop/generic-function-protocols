@@ -9,4 +9,8 @@
   (:nicknames #:gfp)
   (:export
    #:defgeneric
-   #:generic-function-with-protocol))
+   #:generic-function-with-protocol
+   #:add-protocol-gf
+   #:remove-tag-gf
+   #:print-protocols
+   #:list-functions))
