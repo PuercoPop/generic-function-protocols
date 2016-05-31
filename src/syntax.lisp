@@ -15,7 +15,7 @@
     (if (eq 'generic-function-with-protocol (second generic-function-class-option))
         `(%defgeneric ,gf-name ,lambda-list nil ,@options)
         (error "The option :GENERIC-FUNCTION-CLASS *must* be generic-function-with-protocol."))
-    `(%defgeneric ,gf-name ,lambda-list nil ,@(cons (cons :generic-funciton-class 'generic-function-with-protocol) options))))
+    `(%defgeneric ,gf-name ,lambda-list nil ,@(cons (list :generic-function-class 'generic-function-with-protocol) options))))
 
 (defmacro %defgeneric (gf-name lambda-list (&body add-protocol-forms) &body options)
   ;; If the :protocol option is present remove, it and add a call to ADD-PROTOCOL-GF
