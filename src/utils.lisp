@@ -1,4 +1,4 @@
-(in-package #:tgf)
+(in-package #:gfp)
 
 (defun list-sans-element (list index-to-remove)
   "Return a new LIST with the element at INDEX-TO-REMOVE position removed."

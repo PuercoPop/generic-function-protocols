@@ -1,4 +1,4 @@
-(defpackage #:tagged-generic-functions
+(defpackage #:generic-function-protocols
   (:use #:cl
         #:hash-set
         #:lisp-namespace)
@@ -6,7 +6,7 @@
                 #:if-let
                 #:when-let)
   (:shadow #:defgeneric)
-  (:nicknames #:tgf)
+  (:nicknames #:gfp)
   (:export
    #:defgeneric
-   #:tagged-generic-function))
+   #:generic-function-with-protocol))

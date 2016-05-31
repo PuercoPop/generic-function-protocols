@@ -1,6 +1,6 @@
 (in-package #:asdf-user)
 
-(defsystem #:tagged-generic-functions
+(defsystem #:generic-function-protocols
   :serial t
   :depends-on (#:alexandria
                #:closer-mop
